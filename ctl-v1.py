@@ -4,6 +4,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
+import plotly.express as px
+
 from datetime import datetime
 
 # [Previous CSS styles remain the same...]
