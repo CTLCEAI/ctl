@@ -469,7 +469,7 @@ def print_year_data(data, year):
             }
             
             try:
-                client = openai.OpenAI(api_key="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")
+                client = openai.OpenAI(api_key="sk-svcacct-KhL3atKnJCrYgWi4UVRnrLWhmQ9zMjEzBnlN91dkSVeusipZ-EFfwl942McnlT3BlbkFJyVR8sLL9GgAjhzz2zIeeAZRRLWLuLoXzECK6Jv8cFNOuVfcOPU2Z248uidCAA")
                 
                 with st.spinner(f"Generating {analysis_type.replace('_', ' ')}..."):
                     response = client.chat.completions.create(
