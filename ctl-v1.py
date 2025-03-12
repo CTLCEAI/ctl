@@ -1,18 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-import numpy as np
-import subprocess
 from datetime import datetime
-
-# Automatically install missing package
-try:
-    import openpyxl
-except ModuleNotFoundError:
-    subprocess.run(["pip", "install", "openpyxl"])
-    import openpyxl  # Re-import after installation
 
 # Function to clean column names
 def clean_column_names(df):
@@ -85,7 +74,7 @@ def create_correlation_heatmap(df):
         correlation_matrix,
         text_auto=True,
         aspect="auto",
-        color_continuous_scale="coolwarm",
+        color_continuous_scale="emrld",
         title="Correlation Heatmap"
     )
     
