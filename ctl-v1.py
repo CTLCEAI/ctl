@@ -306,7 +306,7 @@ def main():
                 create_summary_metrics(filtered_df, selected_year)
                 st.markdown("---")
                 create_time_series_analysis(filtered_df)
-                create_correlation_heatmap(filtered_df)
+                
             
             with tabs[1]:
                 create_status_analysis(filtered_df, selected_year)
