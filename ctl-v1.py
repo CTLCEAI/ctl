@@ -6,6 +6,17 @@ from plotly.subplots import make_subplots
 import numpy as np
 import plotly.express as px
 
+import os
+import subprocess
+
+# Automatically install missing package
+try:
+    import plotly.express as px
+except ModuleNotFoundError:
+    subprocess.run(["pip", "install", "plotly"])
+    import plotly.express as px  # Import again after installation
+
+
 from datetime import datetime
 
 # [Previous CSS styles remain the same...]
