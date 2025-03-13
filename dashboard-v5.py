@@ -434,7 +434,7 @@ def print_year_data(data, year):
                 3. Portfolio composition
                 4. Year-over-year changes (if apparent)
                 
-                Keep it business-focused and highlight the most important insights.
+                Keep it business-focused and highlight the most important insights with supporting facts and figures in figures, % terms and years quoted accordingly.
                 """,
                 
                 "trl": f"""
@@ -448,7 +448,7 @@ def print_year_data(data, year):
                 3. Risks and opportunities in the current TRL distribution
                 4. Recommendations for TRL progression
                 
-                Focus on actionable insights for R&D and commercialization strategy.
+                Focus on actionable insights for R&D and commercialization strategy. with supporting facts and figures in figures, % terms and years quoted accordingly.
                 """,
                 
                 "recommendations": f"""
@@ -464,7 +464,7 @@ def print_year_data(data, year):
                 4. Portfolio balancing suggestions
                 5. Next steps for portfolio optimization
                 
-                Make recommendations specific and actionable.
+                Make recommendations specific and actionable with with supporting facts and figures in figures, % terms and years quoted accordingly.
                 """
             }
             
@@ -827,7 +827,7 @@ def get_all_years_data(data):
                 3. Major shifts in portfolio composition
                 4. Notable achievements and milestones
                 
-                Highlight the most significant trends and changes over time.
+                Highlight the most significant trends and changes over time with supporting facts and figures in figures, % terms and years quoted accordingly.
                 """,
                 
                 "trl": f"""
@@ -843,7 +843,7 @@ def get_all_years_data(data):
                 4. Areas needing acceleration
                 5. Risk assessment across TRL stages
                 
-                Focus on long-term patterns and strategic implications.
+                Focus on long-term patterns and strategic implications with supporting facts and figures in figures, % terms and years quoted accordingly.
                 """,
                 
                 "recommendations": f"""
@@ -859,7 +859,7 @@ def get_all_years_data(data):
                 4. Growth acceleration opportunities
                 5. Strategic focus areas for future development
                 
-                Make recommendations specific, actionable, and based on observed trends.
+                Make recommendations specific, actionable, and based on observed trends with supporting facts and figures in figures, % terms and years quoted accordingly.
                 """
             }
             
