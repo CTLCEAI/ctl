@@ -434,7 +434,7 @@ def print_year_data(data, year):
                 3. Portfolio composition
                 4. Year-over-year changes (if apparent)
                 
-                Keep it business-focused and highlight the most important insights with supporting facts and figures in figures, % terms and years quoted accordingly.
+                Keep it business-focused and highlight the most important insights. Express the figures in % terms for the year and across the years comparatively. Analyze the % composition of each stage in the TRL (Technology Readiness Level, comparing them with the rest of the stages. Describe the concentration and distribution patterns, highlighting any significant variations or trends.
                 """,
                 
                 "trl": f"""
@@ -827,7 +827,7 @@ def get_all_years_data(data):
                 3. Major shifts in portfolio composition
                 4. Notable achievements and milestones
                 
-                Highlight the most significant trends and changes over time with supporting facts and figures in figures, % terms and years quoted accordingly.
+                Highlight the most significant trends and changes over time.  Express the figures in % terms for the year and across the years comparatively. Analyze the % composition of each stage in the TRL (Technology Readiness Level, comparing them with the rest of the stages. Describe the concentration and distribution patterns, highlighting any significant variations or trends.
                 """,
                 
                 "trl": f"""
@@ -843,7 +843,7 @@ def get_all_years_data(data):
                 4. Areas needing acceleration
                 5. Risk assessment across TRL stages
                 
-                Focus on long-term patterns and strategic implications with supporting facts and figures in figures, % terms and years quoted accordingly.
+                Focus on long-term patterns and strategic implications.Express the figures in % terms for the year and across the years comparatively. Analyze the % composition of each stage in the TRL (Technology Readiness Level, comparing them with the rest of the stages. Describe the concentration and distribution patterns, highlighting any significant variations or trends.
                 """,
                 
                 "recommendations": f"""
