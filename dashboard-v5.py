@@ -352,7 +352,8 @@ def print_year_data(data, year):
             plt.pie(stage_counts.values,
                    labels=stage_counts.index,
                    autopct='%1.1f%%',
-                   colors=['#4e73df', '#1cc88a', '#36b9cc'],
+                #    colors=['#4e73df', '#1cc88a', '#36b9cc'],
+                    colors = plt.cm.Set3(np.linspace(0, 1, len(vertical_counts))),
                    shadow=True)
             plt.title(f'TRL Distribution {year}')
             st.pyplot(fig1)
@@ -363,7 +364,8 @@ def print_year_data(data, year):
             fig2 = plt.figure(figsize=(8, 8))
             plt.bar(range(len(stage_counts)), 
                    stage_counts.values,
-                   color=['#4e73df', '#1cc88a', '#36b9cc'])
+                #    color=['#4e73df', '#1cc88a', '#36b9cc']
+                    color = plt.cm.Set3(np.linspace(0, 1, len(vertical_counts))))
             plt.xticks(range(len(stage_counts)), 
                       stage_counts.index,
                       rotation=45)
@@ -398,7 +400,9 @@ def print_year_data(data, year):
             fig4 = plt.figure(figsize=(8, 8))
             bars = plt.bar(range(len(vertical_counts)), 
                     vertical_counts.values,
-                    color=colors)
+                    # color=colors
+                    color = plt.cm.Set3(np.linspace(0, 1, len(vertical_counts)))
+                    )
             plt.xticks(range(len(vertical_counts)), 
                       vertical_counts.index,
                       rotation=45,
@@ -652,7 +656,8 @@ def get_all_years_data(data):
                 stage_counts.values,
                 labels=stage_counts.index,
                 autopct='%1.1f%%',
-                colors=['#4e73df', '#1cc88a', '#36b9cc']
+                # colors=['#4e73df', '#1cc88a', '#36b9cc']
+                colors = plt.cm.Set3(np.linspace(0, 1, len(vertical_counts)))
             )
             ax1.set_title('TRL Distribution (All Years)')
             st.pyplot(fig1)
@@ -701,7 +706,8 @@ def get_all_years_data(data):
                 vertical_counts.values,
                 labels=vertical_counts.index,
                 autopct=make_autopct(vertical_counts.values),
-                colors=colors,
+                # colors=colors,
+                colors = plt.cm.Set3(np.linspace(0, 1, len(vertical_counts))),
                 startangle=90,
                 textprops={'fontsize': 8},
                 pctdistance=0.75
@@ -739,7 +745,10 @@ def get_all_years_data(data):
             for column in vertical_pivot.columns:
                 values = vertical_pivot[column].values
                 ax4.bar(vertical_pivot.index, values, bottom=bottom,
-                       label=column, color=vertical_colors.get(column, '#808080'))
+                       label=column,
+                    #    color=vertical_colors.get(column, '#808080')
+                        color = plt.cm.Set3(np.linspace(0, 1, len(vertical_counts)))
+                       )
                 bottom += values
             
             ax4.set_title('Vertical Distribution by Year')
